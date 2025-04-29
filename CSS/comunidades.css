@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 60%;
+
+    @media(max-width:320px) {
+        height: 200px;
+    }
+
+    @media(min-width:600px) {
+        height: 300px;
+    }
+
+    @media(min-width:900px) {
+        height: 400px;
+    }
+}
+
+.nav {
+    background-image: url('../IMG/background-comunidade.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media(min-width:320px) {
+        height: 200px;
+    }
+
+    @media(min-width:600px) {
+        height: 300px;
+    }
+
+    @media(min-width:900px) {
+        height: 400px;
+    }
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.nome {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    color: #fff;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding-left: 50px;
+    z-index: 2000;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: fixed;
+    margin-left: 87%;
+    z-index: 3100;
+
+    @media (min-width: 425px) {
+        margin-left: 90%;
+    }
+
+    @media (min-width: 600px) {
+        margin-left: 93%;
+    }
+
+    @media (min-width: 800px) {
+        margin-left: 94%;
+    }
+
+    @media (min-width: 900px) {
+        display: none;
+    }
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: fixed;
+    z-index: 2000;
+}
+
+.desktop {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+        font-family: "Alegreya Sans SC", sans-serif;
+        font-size:17px;
+        color:#fff;
+        margin-top: -350px;
+        font-weight:bold;
+        margin-right:20px;
+    }
+}
+
+.desktop li {
+    padding: 10px;
+}
+
+.desktop.active {
+   background-color: #104B83;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    z-index: 3000;
+    border-radius: 50px 0px 50px 50px;
+}
+
+h1 {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+
+    @media (min-width: 900px) {
+        font-size: 30px;
+    }
+}
+
+.intro {
+    color: #000;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.multiroes, 
+.cont-multiroes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
+}
+
+.multiroes article, 
+.cont-multiroes article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.multiroes img, 
+.cont-multiroes img {
+    width: 70%;
+    height: 100%;
+}
+
+.multiroes h2, 
+.cont-multiroes h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin-top: 10px;
+}
+
+.multiroes p, 
+.cont-multiroes p {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.multiroes button, 
+.cont-multiroes button {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #1F75C6;
+    color: #fff;
+    border: 2px solid #104B83;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+
+    @media (min-width: 900px) {
+        font-size:20px;
+    }
+}
+
+.multiroes button:hover, 
+.cont-multiroes button:hover {
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 40px;
+    color: red;
+    margin: 10px;
+}
+
+footer {
+    background-color: #104B83;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Alegreya Sans SC", sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+}

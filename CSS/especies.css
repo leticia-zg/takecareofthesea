@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 60%;
+
+    @media(max-width:320px) {
+        height: 200px;
+    }
+
+    @media(min-width:600px) {
+        height: 300px;
+    }
+
+    @media(min-width:900px) {
+        height: 400px;
+    }
+}
+
+.nav {
+    background-image: url('../IMG/background-polvo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media(min-width:320px) {
+        height: 200px;
+    }
+
+    @media(min-width:600px) {
+        height: 300px;
+    }
+
+    @media(min-width:900px) {
+        height: 400px;
+    }
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.nome {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    color: #fff;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding-left: 50px;
+    z-index: 2000;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: fixed;
+    margin-left: 87%;
+    z-index: 3100;
+
+    @media (min-width: 425px) {
+        margin-left: 90%;
+    }
+
+    @media (min-width: 600px) {
+        margin-left: 93%;
+    }
+
+    @media (min-width: 800px) {
+        margin-left: 94%;
+    }
+
+    @media (min-width: 900px) {
+        display: none;
+    }
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: fixed;
+    z-index: 2000;
+}
+
+.desktop {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Alegreya Sans SC", sans-serif;
+        font-size: 17px;
+        color: #fff;
+        margin-top: -350px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+}
+
+.desktop li {
+    padding: 10px;
+}
+
+.desktop.active {
+    background-color: #104B83;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    z-index: 3000;
+    border-radius: 50px 0px 50px 50px;
+}
+
+.buscar {
+    width: 80%;
+    height: 30px;
+    margin-top: 20px;
+    border: 2px solid #104B83;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.buscar::placeholder {
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.busca img {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 25px;
+}
+
+.especies, 
+.cont-especies, 
+.terc-especies, 
+.quart-especies, 
+.quint-especies, 
+.sext-especies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.especies article, 
+.cont-especies article, 
+.terc-especies article, 
+.quart-especies article, 
+.quint-especies article, 
+.sext-especies article {
+    margin: 10px;
+    background-color: #104B83;
+    color: #fff;
+    max-width: 300px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.especies article img, 
+.cont-especies article img, 
+.terc-especies article img, 
+.quart-especies article img, 
+.quint-especies article img, 
+.sext-especies article img {
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+}
+
+.especies article p, 
+.cont-especies article p, 
+.terc-especies article p, 
+.quart-especies article p, 
+.quint-especies article p, 
+.sext-especies article p {
+    font-size: 13px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #104B83;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Alegreya Sans SC", sans-serif;
+}

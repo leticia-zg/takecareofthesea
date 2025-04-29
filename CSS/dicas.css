@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 60%;
+
+    @media(max-width:320px) {
+        height: 200px;
+    }
+
+    @media(min-width:600px) {
+        height: 300px;
+    }
+
+    @media(min-width:900px) {
+        height: 400px;
+    }
+}
+
+.nav {
+    background-image: url('../IMG/background-dicas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media(min-width:320px) {
+        height: 200px;
+    }
+
+    @media(min-width:600px) {
+        height: 300px;
+    }
+
+    @media(min-width:900px) {
+        height: 400px;
+    }
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.nome {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    color: #fff;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding-left: 50px;
+    z-index: 2000;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: fixed;
+    margin-left: 87%;
+    z-index: 3100;
+
+    @media (min-width: 425px) {
+        margin-left: 90%;
+    }
+
+    @media (min-width: 600px) {
+        margin-left: 93%;
+    }
+
+    @media (min-width: 800px) {
+        margin-left: 94%;
+    }
+
+    @media (min-width: 900px) {
+        display: none;
+    }
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: fixed;
+    z-index: 2000;
+}
+
+.desktop {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Alegreya Sans SC", sans-serif;
+        font-size: 17px;
+        color: #fff;
+        margin-top: -350px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+}
+
+.desktop li {
+    padding: 10px;
+}
+
+.desktop.active {
+    background-color: #104B83;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    z-index: 3000;
+    border-radius: 50px 0px 50px 50px;
+}
+
+h1, h2 {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+
+    @media (min-width: 900px) {
+        font-size: 30px;
+    }
+}
+
+.intro {
+    color: #000;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dicas, 
+.segundo-dicas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.dicas article, 
+.segundo-dicas article {
+    margin-top: 30px;
+    width: 70%;
+    border: 2px solid #1F75C6;
+    border-radius: 10px;
+
+    @media(min-width:425px) {
+        width: 260px;
+    }
+
+    @media (min-width: 900px) {
+        margin: 10px;
+    }
+}
+
+.dicas article h3, 
+.segundo-dicas article h3 {
+    text-align: center;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 18px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.dicas article p, 
+.segundo-dicas article p {
+    text-align: center;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dicas article img, 
+.segundo-dicas article img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.videos-reciclagem {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.videos-reciclagem iframe {
+
+    @media (min-width: 1200px) {
+        width: 400px;
+        height: 300px;
+        margin: 20px;
+    }
+
+}
+
+h3 {
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+
+    @media (min-width: 900px) {
+        font-size: 20px;
+    }
+}
+
+.h2-residuos {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #D9D9D9;
+    padding-top: 10px;
+
+    @media (min-width: 900px) {
+        font-size: 30px;
+    }
+}
+
+.pontos-coleta, 
+.cont-pontos-coleta, 
+.ultm-pontos-coleta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.pontos {
+    background-color: #104B83;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.pontos img {
+    width: 30px;
+    height: 30px;
+}
+
+.lista-reciclaveis {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.materiais, 
+.cont-materiais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.materiais p, 
+.cont-materiais p {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #104B83;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Alegreya Sans SC", sans-serif;
+    padding: 10px;
+}

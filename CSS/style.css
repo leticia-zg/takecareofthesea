@@ -1,0 +1,574 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 60%;
+
+    @media(max-width:320px) {
+        height: 200px;
+    }
+
+    @media(min-width:600px) {
+        height: 300px;
+    }
+
+    @media(min-width:900px) {
+        height: 400px;
+    }
+}
+
+.nav {
+    background-image: url('../IMG/background-peixeLeao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media(min-width:320px) {
+        height: 200px;
+    }
+
+    @media(min-width:600px) {
+        height: 300px;
+    }
+
+    @media(min-width:900px) {
+        height: 400px;
+    }
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.nome {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    color: #fff;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding-left: 50px;
+    z-index: 2000;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: fixed;
+    margin-left: 87%;
+    z-index: 3100;
+
+    @media (min-width: 425px) {
+        margin-left: 90%;
+    }
+
+    @media (min-width: 600px) {
+        margin-left: 93%;
+    }
+
+    @media (min-width: 800px) {
+        margin-left: 94%;
+    }
+
+    @media (min-width: 900px) {
+        display: none;
+    }
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: fixed;
+    z-index: 2000;
+}
+
+.desktop {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+        font-family: "Alegreya Sans SC", sans-serif;
+        font-size:17px;
+        color:#fff;
+        margin-top: -350px;
+        font-weight:bold;
+        margin-right:20px;
+    }
+}
+
+.desktop li {
+    padding: 10px;
+}
+
+.desktop.active {
+   background-color: #104B83;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    z-index: 3000;
+    border-radius: 50px 0px 50px 50px;
+}
+
+h1 {
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #104B83;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+    margin-top: 10px;
+
+    @media (min-width: 900px) {
+        font-size: 220%;
+    }
+}
+
+.intro, 
+.info {
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px;
+    color: #000;
+
+    @media (min-width: 900px) {
+        font-size: 160%;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+.apresentacao {
+    width: 100%;
+    height: 400px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+    @media (min-width: 900px) {
+        height:400px;
+    }
+}
+
+.apresentacao p {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    color: #104B83;
+    font-size: 27px;
+    margin-bottom: 20px;
+
+    @media (min-width: 900px) {
+        font-size: 250%;
+    }
+
+    @media(min-width: 1200px) {
+        margin-top:-30px;
+        margin-bottom:50px;
+    }
+}
+
+.especies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.especies article {
+    background-color: #104B83;
+    color: #fff;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    @media (min-width: 900px) {
+        margin: 10px;
+    }
+
+}
+
+.especies article img {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+}
+
+.especies article p {
+    font-size: 13px;
+    padding-left: 15px;
+    font-family: "Alegreya Sans SC", sans-serif;
+
+    @media(min-width:375px) {
+        padding-top: 5%;
+    }
+}
+
+.cont-especies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.cont-especies article {
+    background-color: #104B83;
+    color: #fff;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    @media (min-width: 900px) {
+        margin: 10px;
+    }
+}
+
+.cont-especies article img {
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+}
+
+.cont-especies article p {
+    font-size: 13px;
+    padding-left: 15px;
+    font-family: "Alegreya Sans SC", sans-serif;
+
+    @media(min-width:375px) {
+        padding-top: 5%;
+    }
+}
+
+.video {
+    border-radius: 10px;
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 331px;
+    height: 186px;
+    margin-top: 100px;
+    border-radius: 10px;
+
+    @media(min-width: 1200px) {
+        width: 431px;
+    height: 286px;
+    margin-top: 60px;
+    }
+}
+
+.explorar {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #1F75C6;
+    color: #fff;
+    border: 2px solid #104B83;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+
+    @media (min-width: 900px) {
+        font-size:20px;
+    }
+}
+
+.btn-explorar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preservacao {
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tartaruga-plastico {
+    width: 100%;
+    height: 70%;
+
+    @media(min-width:425px) {
+        width: 375px;
+        height: 242px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+}
+
+.preservacao h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    color: #104B83;
+    font-family: "Alegreya Sans SC", sans-serif;
+
+    @media (min-width: 900px) {
+        font-size: 30px;
+        padding-left: 30%;
+        padding-right:30%;
+    }
+}
+
+.preservacao p {
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+    font-weight: bold;
+
+    @media (min-width: 900px) {
+        font-size: 20px;
+        padding-left: 30%;
+        padding-right:30%;
+    }
+}
+
+.comunidade {
+    width: 30px;
+    height: 30px;
+    margin-left: 250px;
+    margin-top: -20px;
+}
+
+.btn-comunidade {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #1F75C6;
+    color: #fff;
+    border: 2px solid #104B83;
+    border-radius: 10px;
+    padding: 10px;
+
+    @media (min-width: 900px) {
+        font-size:20px;
+    }
+}
+
+.h2-3rs {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+
+    @media (min-width: 900px) {
+        font-size:30px;
+    }
+}
+
+.dicas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.dicas article {
+    margin-top: 30px;
+    width: 70%;
+    border: 2px solid #1F75C6;
+    border-radius: 10px;
+
+    @media(min-width:425px) {
+        width: 260px;
+    }
+}
+
+.dicas article h3 {
+    text-align: center;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 18px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.dicas article p {
+    text-align: center;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dicas article img {
+    width: 100%;
+    height: 150px;
+}
+
+.fale-conosco {
+    margin-top: 20px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fale-conosco h2 {
+    padding-top: 10px;
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-size: 25px;
+
+    @media (min-width: 900px) {
+        font-size:30px;
+    }
+}
+
+.fale-conosco p {
+    font-family: "Alegreya Sans SC", sans-serif;
+    padding-top: 20px;
+    text-align:center
+}
+
+.fale-conosco form {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.fale-conosco form input {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 13px;
+    background-color: #fff;
+    border: 2px solid #1F75C6;
+    border-radius: 5px;
+    height: 20px;
+
+    @media (min-width: 900px) {
+        height:40px;
+    }
+}
+
+.enviar:hover {
+    cursor: pointer;
+}
+
+.fale-conosco form .foto {
+    text-decoration: none;
+    border: none;
+    height: 100%;
+    background-color: #D9D9D9;
+}
+
+.fale-conosco form .duvida {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 13px;
+    background-color: #fff;
+    border: 2px solid #1F75C6;
+    border-radius: 5px;
+    height: 80px;
+}
+
+.fale-conosco form .enviar {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #1F75C6;
+    color: #fff;
+    border: 2px solid #104B83;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+
+    @media (min-width: 900px) {
+        font-size:20px;
+    }
+}
+
+.btn-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #104B83;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Alegreya Sans SC", sans-serif;
+}
